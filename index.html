@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="images/main/icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!--폰트-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ecogram</title>
+
+    <!--css-->
+    <link href="css/main/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      .modal {
+        width: 310px;
+        height: 400px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border: 1px solid #333;
+      }
+      .hidden {
+        display: none;
+      }
+
+      /*menu*/
+      .menu {
+        position: fixed;
+        text-align: center;
+        height: 62px;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .menu_left {
+        float: left;
+        display: block;
+        margin: 3px 0 0 3%;
+      }
+      .menu_center {
+        width: 40%;
+        margin: auto;
+      }
+      .menu_center li {
+        float: left;
+        width: 25%;
+        margin: 17px 0 0 -6px;
+      }
+      .menu_center li a {
+        font-weight: 700;
+        font-size: 19px;
+        display: block;
+
+        color: #000;
+      }
+      .menu_center .onn a {
+        color: orange;
+      }
+      .menu_right {
+        float: right;
+        margin: 18px 4.1% 0 0; /*index.html에서만 적용해야함. 스크롤때메*/
+        font-weight: 200;
+      }
+      .menu_right li {
+        float: left;
+        margin: 0 0 0 20px;
+      }
+      .menu img {
+        width: 100%;
+      }
+
+      /*login*/
+      #login-form {
+        width: 190px;
+        height: 120px;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      #login-form input {
+        width: 80px;
+        float: right;
+      }
+      #login-form button {
+        margin-top: 10px;
+        width: 140px;
+        height: 23px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상단 고정메뉴 -->
+    <div class="menu">
+      <!--menu-->
+      <a href="index.html" class="menu_left"
+        ><img src="images/main/menulogo.png" alt="menulogo"
+      /></a>
+
+      <ul class="menu_center">
+        <li><a href="sub_html/sub1.html">에코그램</a></li>
+        <li><a href="sub_html/sub2.html">실천하기</a></li>
+        <li><a href="sub_html/sub3.html">함께하기</a></li>
+        <li><a href="sub_html/sub4.html">환경소식</a></li>
+      </ul>
+
+      <ul class="menu_right">
+        <li id="login-click">Login</li>
+        <li>Join</li>
+        <span id="greeting" class="hidden"></span>
+
+        <form id="login-form" class="hidden">
+          <label>아이디</label>
+          <input type="text" placeholder="jeong" id="loginID" /><br />
+          <label>비밀번호</label>
+          <input type="password" placeholder="12345" id="loginPW" />
+          <button>로그인</button>
+        </form>
+      </ul>
+    </div>
+    <!--menu-->
+
+    <div id="scroll-wrap" class="wrapper">
+      <!--wrapper-->
+      <div class="main">
+        <!--main-->
+
+        <section class="page1 scroll-box">
+          <!--page1-->
+          <div class="page1_inner">
+            <div class="page1_box">
+              <h5>
+                <a href="#"
+                  ><img src="images/main/mainlogo.png" alt="mainlogo"
+                /></a>
+              </h5>
+
+              <div class="page1_box_letter">
+                <!--page1_box_letter-->
+                <h1>
+                  무엇을 찾으시나요?<br />
+                  환경, 쓰레기, 캠페인을 검색해보세요
+                </h1>
+                <div id="input_wrap">
+                  <input
+                    type="search"
+                    placeholder="찾고싶은 환경정보를 입력하세요."
+                    id="search"
+                  />
+                  <h3>
+                    <a href="#"
+                      ><img src="images/main/in_search.png" alt="in_search"
+                    /></a>
+                  </h3>
+                </div>
+                <h6>
+                  추천 검색어 ｜ <a href="#">#2021투명플라스틱</a>
+                  <a href="#">#담배꽁초</a> <a href="#">#빙하</a>
+                  <a href="#">#국립공원봄꽃개화</a>
+                </h6>
+              </div>
+              <!--page1_box_letter-->
+            </div>
+          </div>
+        </section>
+        <!--page1-->
+
+        <section class="page2 scroll-box">
+          <!--page2-->
+          <div class="page2_left">
+            <div class="page2_left_inner">
+              <h1>지구친화적 다이어트</h1>
+              <p class="p1">
+                <span>Refuse</span>&nbsp;&nbsp;&nbsp;필요 없는 물건을 거절하고,
+              </p>
+              <p class="p2">
+                <span>Reduce</span>&nbsp;&nbsp;&nbsp;쓰는 양을 줄이고,
+              </p>
+              <p class="p3">
+                <span>Reuse</span>&nbsp;&nbsp;&nbsp;일회용 대신 여러 번 사용할
+                수 있는 제품을 사고,
+              </p>
+              <p class="p4">
+                <span>Recycle</span>&nbsp;&nbsp;&nbsp;재사용 할 수 없을 때만
+                재활용하고,
+              </p>
+              <p class="p5">
+                <span>Rot</span>&nbsp;&nbsp;&nbsp;가능한 한 썩는 제품을 사용하여
+                매립해 자원을 순환시키자.
+              </p>
+
+              <a href="sub_html/sub2.html">실천하기</a>
+              <h6 id="idea">아이디어 공유하기</h6>
+            </div>
+          </div>
+
+          <div class="page2_right">
+            <video autoplay muted loop>
+              <source src="images/main/video_trash.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
+        <!--page2-->
+
+        <section class="page3 scroll-box">
+          <!--page3-->
+          <div class="page3_inner">
+            <h6>
+              필요한 것을 줄이면,<br />
+              쓰레기양도 자연스레 감소합니다
+            </h6>
+            <p>
+              By reducing your needs,<br />
+              you will automatically see a huge drop<br />
+              in the amount of trash you are creating
+            </p>
+          </div>
+        </section>
+        <!--page3-->
+
+        <section class="page4 scroll-box">
+          <!--page4-->
+          <div class="page4_inner">
+            <h1>에코그램 NEWS</h1>
+
+            <a href="#"
+              ><div>
+                <p class="subject">에코그램 경영선언문</p>
+                <p class="mid ellipsis">
+                  에코그램은 정보과 실천으로 더 나은 환경을 만들기 위해
+                  노력합니다. 새로운 생각이 모여 세상에 없던 새로운 법을
+                  제정하기 위해 노력해보기도 합니다. 시도해 보지 않은 방식을
+                  두려워하지 않으며, 지속가능한 발전을 추구합니다. 이를 통해
+                  에코그램은 사회가 보다 선한 방향으로 발전할 수 있도록 기여해야
+                  합니다.
+                </p>
+                <p class="more">더보기</p>
+              </div></a
+            >
+
+            <a href="#"
+              ><div class="div2">
+                <p class="subject">
+                  언제 어디서나 간편하게! 환경과 사람, 그 이상을 연결하는
+                  에코그램
+                </p>
+                <p class="mid ellipsis">
+                  검색서비스는 물론 새로운 뉴스, 캠페인 등 다양한 정보를
+                  제공하는 에코그램은 우리의 생활을 보다 편리하게 만들어 주고
+                  있습니다. 에코그램을 통해 세상의 정보와 쓰레기 재활용법에도
+                  보다 가까이 더 쉽게 다가갈 수 있도록 우리가 한 발자국 더
+                </p>
+                <p class="more">더보기</p>
+              </div></a
+            >
+
+            <a href="#"
+              ><div>
+                <p class="subject">
+                  5월 22일 세계 생물종 다양성 보존의 날을 기념하고자 합니다.
+                </p>
+                <p class="mid ellipsis">
+                  '세계 생물종 다양성 보존의 날'이라는 기념일을 들어보신 적
+                  있나요? 유엔(UN)의 생물다양성협약이 발표된 날을 기념하고
+                  생물종의 다양성에 대한 이해와 보존을 위해 제정한 날로 매년 5월
+                  22일을 '세계 다양성 보존의 날' 이라고 지정하게 되었습니다.
+                </p>
+                <p class="more">더보기</p>
+              </div></a
+            >
+          </div>
+        </section>
+        <!--page4-->
+
+        <section class="page5 scroll-box">
+          <!--page5-->
+          <div class="page5_inner">
+            <div class="height">
+              <div class="campaign1">
+                <a href="#" class="campaign1_a1"
+                  ><img
+                    src="images/main/campaign1.jpg"
+                    alt="지구온도 낮추기"
+                    class="img1"
+                /></a>
+                <a href="#" class="campaign1_a2"
+                  ><img
+                    src="images/main/campaign2.jpg"
+                    alt="일회용 사용을 줄이자"
+                    class="img2"
+                /></a>
+              </div>
+
+              <div class="campaign2">
+                <a href="#"
+                  ><img
+                    src="images/main/campaign3.jpg"
+                    alt="동해안 연안 자원활동"
+                    class="img3"
+                /></a>
+              </div>
+            </div>
+
+            <div id="footer">
+              <!--footer-->
+              <p>Copyright © 2021 Project ecogram. All rights Reserved.</p>
+            </div>
+            <!--footer-->
+          </div>
+        </section>
+        <!--page5-->
+      </div>
+      <!--main-->
+    </div>
+    <!--wrapper-->
+
+    <!--js-->
+    <script src="js/onepagescroll.js" type="text/javascript"></script>
+    <script src="js/idea.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
+    <script src="js/animation" type="text/javascript"></script>
+  </body>
+</html>

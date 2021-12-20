@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=1920" />
+    <link
+      href="../images/main/icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!--��Ʈ-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>함께하기</title>
+
+    <!--css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="../css/sub3/sub3style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      /*menu*/
+      .menu {
+        position: fixed;
+        text-align: center;
+        height: 62px;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .menu_left {
+        float: left;
+        display: block;
+        margin: 3px 0 0 3%;
+      }
+      .menu_center {
+        width: 40%;
+        margin: auto;
+      }
+      .menu_center li {
+        float: left;
+        width: 25%;
+        margin: 17px 0 0 -6px;
+      }
+      .menu_center li a {
+        font-weight: 700;
+        font-size: 19px;
+        display: block;
+
+        color: #000;
+      }
+      .menu_center .onn a {
+        color: orange;
+      }
+      .menu_right {
+        float: right;
+        margin: 18px 4.1% 0 0; /*index.html에서만 적용해야함. 스크롤때메*/
+        font-weight: 200;
+      }
+      .menu_right li {
+        float: left;
+        margin: 0 0 0 20px;
+      }
+      .menu img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상단 고정메뉴 -->
+    <div class="menu">
+      <!--menu-->
+      <a href="../index.html" class="menu_left">
+        <img src="../images/main/menulogo.png" alt="menulogo" />
+      </a>
+
+      <ul class="menu_center">
+        <li>
+          <a href="sub1.html">에코그램</a>
+        </li>
+        <li>
+          <a href="sub2.html">실천하기</a>
+        </li>
+        <li class="onn">
+          <a href="sub3.html">함께하기</a>
+        </li>
+        <li>
+          <a href="sub4.html">환경소식</a>
+        </li>
+      </ul>
+
+      <ul class="menu_right">
+        <li id="login-click">Login</li>
+        <li>Join</li>
+        <span id="greeting" class="hidden"></span>
+
+        <form id="login-form" class="hidden">
+          <label>아이디</label>
+          <input type="text" placeholder="jeong" id="loginID" /><br />
+          <label>비밀번호</label>
+          <input type="password" placeholder="12345" id="loginPW" />
+          <button>로그인</button>
+        </form>
+      </ul>
+    </div>
+    <!--menu-->
+
+    <div id="page1">
+      <!--page1-->
+      <div class="page1_inner">
+        <h2>환경보호를 위한 작은 움직임을 응원합니다</h2>
+        <h1>Current Campaign</h1>
+        <img src="../images/sub3/whale.png" alt="whale" />
+      </div>
+    </div>
+    <!--page1-->
+
+    <div id="page2">
+      <!--page2-->
+      <div class="page2_inner">
+        <div
+          class="campaignbox1"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <h4>
+            <a href="#" class="imgbox">
+              <img src="../images/sub3/campaign1.jpg" alt="campaign1" />
+            </a>
+          </h4>
+          <ul>
+            <li class="li1">부산 Busan 2021.01.17</li>
+            <li class="li3">
+              동해안 <br />
+              연안정화 자원활동
+            </li>
+            <li class="li4">
+              해양수산부은 동해안연안 특별관리해역의 환경개선을 위한 2021년
+              해양오염퇴적물 정화·복원 사업을 본격 착수한다. 해수부는 이달부터
+              해운대 해수욕장 인근해역에 대한 폐기물 분포현황 조사와 방어진항
+              사업 후 해양환경 모니터링을 실시한다고 밝혔다. 동해안 연안은
+              대규모 공업단지가 위치하여 그동안 우리나라 경제발전의 원동력이
+              되어왔다. 그러나 장기간 산업폐수 및 생활하수가 해양으로
+              유입·축적됨에 따라 해양환경이 심각하게 훼손되고 생활환경이 크게
+              저해되는 등의 문제가 많아 2000년에 특별관리해역으로 지정되었다.
+              이에 해양수산부는 해운대 해수욕장 인근의 생활폐기물 오염현황을
+              조사하여 장기적인 쓰레기 관리계획을 수립할 예정이다.
+            </li>
+            <li>
+              <a href="#" class="li_a">VIEW MORE &nbsp;→</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="campaignbox2"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <h4>
+            <a href="#">
+              <img src="../images/sub3/campaign2.jpg" alt="campaign2" />
+            </a>
+          </h4>
+          <ul>
+            <li class="li1">전국 Nationwide 2021.02.01 - 2021.02.28</li>
+            <li class="li3">쓰레기 다이어트, <br />함께해요</li>
+            <li class="li4">
+              "쓰레기 다이어트 함께해요" 캠페인은 모든 제품이 재사용될 수 있도록
+              장려하며폐기물을 방지하는데 초점을 맞춘 캠페인이다. 제품들이
+              쓰레기 매립지나 소각장, 바다에 쓰레기를 보내지 않는 것이 목표인데,
+              현재 플라스틱의 9%만이 실제로 재활용되고 있다. <br />그래서 이번
+              캠페인의 목표는 가능한 한 모든 제품, 포장 및 자재를 태우지 않고,
+              환경이나 인간의 건강을 위협할 수 있는 토지, 해양, 공기로 배출하지
+              않으며 책임 있는 생산, 소비, 재사용 및 회수를 통해 모든 자원을
+              보존하는 것. 제품의 흐름을 크게 바꾸어 낭비가 없는 사회를 목표로
+              한다. 쓰레기 다이어트란 재활용과 재사용을 통해 폐기물을 없애는 것
+              이상의 것을 포함한다. 폐기물을 줄이기 위한 생산·유통 시스템의
+              재구축에 힘을 쏟고 있다.
+            </li>
+            <li>
+              <a href="#" class="li_a">VIEW MORE &nbsp;→</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="campaignbox3"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <h4 class="h4">
+            <a href="#">
+              <img src="../images/sub3/campaign3.jpg" alt="campaign3" />
+            </a>
+          </h4>
+          <ul>
+            <li class="li1">서울 Seoul 2021.03.02 - 2021.03.27</li>
+            <li class="li3">
+              화색<br />
+              프로젝트
+            </li>
+            <li class="li4">
+              "화색(化色)" 프로젝트는 버려지는 화장품을 이용해 작품으로
+              재탄생시키는 프로젝트이다. 처리하기 어려운 폐화장품을
+              리사이클링하여 작품의 원료로 재탄생시켜 작품으로 승화시켰다.
+              남녀노소를 불문하고 매일 사용하는 기초 스킨케어 화장품부터 주로
+              여성들이 많이 사용하는 색조 화장품까지, 우리의 일상 속에는
+              생각보다 많은 화장품이 사용되고 있다. 한 달 동안 1인당 사용되는
+              화장품 개수는 평균 20.3개로, 그만큼 버려지는 폐화장품 역시 많은
+              양을 초래한다. 그러나 곰곰이 생각해보면 우리는 기능이 좋은
+              화장품을 쓸 생각만 하지 화장품을 버릴 순간은 쉽게 떠올리지 않는다.
+              화장품을 어떻게 버려야 하는지조차 모르는 사람들이 많은 가운데,
+              그저 내용물을 세척하고 플라스틱이나 유리로 분리하여 버리는 경우가
+              많다.
+            </li>
+            <li>
+              <a href="#" class="li_a">VIEW MORE &nbsp;→</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="campaignbox4"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <h4>
+            <a href="#">
+              <img src="../images/sub3/campaign4.jpg" alt="campaign4" />
+            </a>
+          </h4>
+          <ul>
+            <li class="li1">대구 Daegu 2021.03.31 - 2021.04.05</li>
+            <li class="li3">
+              4월 5일 <br />
+              식목일은<br />
+              나무 심는 날
+            </li>
+            <li class="li4">
+              대구시는 제76회 식목일을 기념해 산림의 소중함을 알리고 숲속의 대구
+              만들기를 위한 나무심기 행사를 추진한다. 이번 나무심기 행사는 오는
+              31일 대구 남구 대명동 산 227-2에서 진행된다. 이 행사는 대구시 본청
+              직원과 산림조합 관계자 150여명을 대상으로 진행한다. 피톤치드
+              방출량이 높은 편백나무 1000여본 식재를 통해 미세먼지 등 기후변화에
+              선제적 대응을 위한 탄소흡수원을 확충할 계획이다. 한편, 올해
+              대구시에서는 기후변화 대응과 경제적·공익적 가치증진을 위해 82ha의
+              면적에 경제수조림과 큰나무공익 및 산림재해방지조림을 추진 중이며,
+              총 사업비는 9억 3400만 원이다.
+            </li>
+            <li>
+              <a href="#" class="li_a">VIEW MORE &nbsp;→</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--page2-->
+
+    <div id="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <ul class="footer_left">
+          <li><a href="#">��������ó����ħ</a></li>
+          <li>��</li>
+          <li>�λ걤���� �߱� �߾Ӵ�� 26 �ٿ��߾�Ÿ�� 10��</li>
+          <li>�̸��� eichel2@naver.com / ��ȭ��ȣ 010-5822-9455</li>
+          <li>Copyright �� 2021 Project ecogram. All rights Reserved.</li>
+        </ul>
+
+        <img
+          src="../images/main/logo_footer.png"
+          alt="logo_footer"
+          class="footerlogo"
+        />
+      </div>
+    </div>
+    <!--footer-->
+
+    <!--js-->
+    <script src="../js/sub4/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/login.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

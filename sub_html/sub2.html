@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=1920" />
+    <link
+      href="../images/main/icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>실천하기</title>
+
+    <!--css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="../css/sub2/sub2style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      /*login*/
+      #login-form {
+        width: 190px;
+        height: 120px;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      #login-form input {
+        width: 80px;
+        float: right;
+      }
+      #login-form button {
+        margin-top: 10px;
+        width: 140px;
+        height: 23px;
+        background-color: orange;
+      }
+      /*pinterlest*/
+      .out-box {
+        width: 1080px;
+        margin-bottom: 160px;
+        position: relative;
+      }
+      .item {
+        width: 20%;
+        max-width: 200px;
+        position: absolute;
+      }
+
+      .item img {
+        border-radius: 15px;
+        width: 100%;
+      }
+      .item p {
+        font-weight: bold;
+      }
+      #post {
+        width: 1080px;
+        margin: auto;
+        padding-top: 160px;
+      }
+      #post h1 {
+        line-height: 75px;
+        text-align: center;
+        padding-bottom: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <!--menu-->
+      <a href="../index.html" class="menu_left"
+        ><img src="../images/main/menulogo.png" alt="menulogo"
+      /></a>
+
+      <ul class="menu_center">
+        <li><a href="sub1.html">에코그램</a></li>
+        <li class="onn"><a href="sub2.html">실천하기</a></li>
+        <li><a href="sub3.html">함께하기</a></li>
+        <li><a href="sub4.html">환경소식</a></li>
+      </ul>
+
+      <ul class="menu_right">
+        <li id="login-click">Login</li>
+        <li>Join</li>
+        <span id="greeting" class="hidden"></span>
+
+        <form id="login-form" class="hidden">
+          <label>아이디</label>
+          <input type="text" placeholder="jeong" id="loginID" /><br />
+          <label>비밀번호</label>
+          <input type="password" placeholder="12345" id="loginPW" />
+          <button>로그인</button>
+        </form>
+      </ul>
+    </div>
+    <!--menu-->
+
+    <div id="page">
+      <!--page-->
+      <div class="page_inner">
+        <h2>사는 것보다 더 쉬운 쓰레기 버리는 법</h2>
+        <h1>You Can Do It!</h1>
+        <img src="../images/sub2/turtle.png" alt="turtle" />
+      </div>
+    </div>
+    <!--page-->
+
+    <section id="post">
+      <h1>
+        올바르게 버리고 싶은<br />
+        쓰레기 종류를 눌러보세요.
+      </h1>
+      <div class="out-box">
+        <div class="item">
+          <img src="../images/sub2/paper.jpg" />
+          <p>종이</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-tire.jpg" />
+          <p>폐 타이어</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-cloth.jpg" />
+          <p>의류</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-spoon.jpg" />
+          <p>일회용품</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-spraycan.jpg" />
+          <p>스프레이</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-food.jpg" />
+          <p>음식물</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-mask.jpg" />
+          <p>마스크</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-siga.jpg" />
+          <p>담배꽁초</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-cup.jpg" />
+          <p>일회용 컵</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-glass.jpg" />
+          <p>유리</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/ex350.jpg" />
+          <p>비닐봉지</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-lightbulb.jpg" />
+          <p>전구</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-can.jpg" />
+          <p>캔</p>
+        </div>
+        <div class="item">
+          <img src="../images/sub2/trash-bigplastic.jpg" />
+          <p>산업폐기물</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <ul class="footer_left">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>｜</li>
+          <li>부산광역시 중구 중앙대로 26 다원중앙타워 10층</li>
+          <li>이메일 eichel2@naver.com / 전화번호 010-5822-9455</li>
+          <li>Copyright © 2021 Project ecogram. All rights Reserved.</li>
+        </ul>
+
+        <img
+          src="../images/main/logo_footer.png"
+          alt="푸터로고"
+          class="footerlogo"
+        />
+      </div>
+    </div>
+    <!--footer-->
+
+    <!--js-->
+    <script src="../js/sub4/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/addpost.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

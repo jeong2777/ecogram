@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920" />
+    <link
+      href="../images/main/icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>에코그램</title>
+
+    <!--css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="../css/sub1/sub1style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      /*login*/
+      #login-form {
+        width: 190px;
+        height: 120px;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      #login-form input {
+        width: 80px;
+        float: right;
+      }
+      #login-form button {
+        margin-top: 10px;
+        width: 140px;
+        height: 23px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <!--menu-->
+      <a href="../index.html" class="menu_left"
+        ><img src="../images/main/menulogo.png" alt="menulogo"
+      /></a>
+
+      <ul class="menu_center">
+        <li class="onn"><a href="sub1.html">에코그램</a></li>
+        <li><a href="sub2.html">실천하기</a></li>
+        <li><a href="sub3.html">함께하기</a></li>
+        <li><a href="sub4.html">환경소식</a></li>
+      </ul>
+
+      <ul class="menu_right">
+        <li id="login-click">Login</li>
+        <li>Join</li>
+        <span id="greeting" class="hidden"></span>
+
+        <form id="login-form" class="hidden">
+          <label>아이디</label>
+          <input type="text" placeholder="jeong" id="loginID" /><br />
+          <label>비밀번호</label>
+          <input type="password" placeholder="12345" id="loginPW" />
+          <button>로그인</button>
+        </form>
+      </ul>
+    </div>
+    <!--menu-->
+
+    <div id="page1">
+      <!--page1-->
+      <div class="page1_inner">
+        <h2>MZ세대를 위한 환경지킴 실천공유공간</h2>
+        <h1>OUR STORY</h1>
+        <img src="../images/sub1/bird.png" alt="bird" />
+      </div>
+    </div>
+    <!--page1-->
+
+    <div class="page2_title">
+      <p>에코그램은 환경보호에 항상 앞장서겠습니다.</p>
+    </div>
+
+    <div class="page2_in">
+      <!--page2_in-->
+      <div class="page2_in_left">
+        <img src="../images/sub1/introduce1.jpg" alt="introduce" />
+      </div>
+
+      <div class="page2_in_right">
+        <h1 data-aos="fade-left" data-aos-duration="1000">
+          환경과 일상을<br />
+          촘촘하게 연결하는<br />
+          소통기관
+        </h1>
+        <h2 data-aos="fade-left" data-aos-duration="1000">
+          기후위기와 환경재난의 시대 속<br />
+          모든 시민들이 언제나, 어디서나 쉽고 빠르게 <br />
+          환경정보에 접근할 수 있도록 노력하고자 합니다.<br />
+          실천을 통해 지속가능하고 좋은 삶이 가능한 <br />
+          생태문명을 함께 만들어 갑시다.
+        </h2>
+      </div>
+    </div>
+    <!--page2_in-->
+
+    <div id="page2"></div>
+
+    <div id="page3">
+      <!--page3-->
+      <img src="../images/sub1/ready_to_go_here.jpg" alt="ready to go here" />
+    </div>
+    <!--page3-->
+
+    <div class="page3_wrap">
+      <!--page3_wrap-->
+      <div class="page3_left">
+        <img src="../images/sub1/logoanimation.png" alt="logoanimation" />
+        <div class="hidden"></div>
+      </div>
+
+      <div class="page3_right">
+        <h4>Brand name</h4>
+        <h1>eco + gram</h1>
+        <p>
+          ecogram의 브랜드 명칭은 <span>&nbsp;eco&nbsp;</span> +
+          <span>&nbsp;gram&nbsp;</span>의 결합어로, eco라는 단어에 인기있는 SNS
+          사이트인 Instagram의 뒷자리 gram을 결합함으로써 환경정보에 좀 더 쉽고
+          재미있게 다가가게 하기 위한 의도를 담았습니다.
+        </p>
+
+        <h4 class="h4two">Color</h4>
+        <ul>
+          <li><img src="../images/sub1/colorchip1.png" alt="colorchip1" /></li>
+          <li><img src="../images/sub1/colorchip2.png" alt="colorchip2" /></li>
+          <li><img src="../images/sub1/colorchip3.png" alt="colorchip3" /></li>
+          <li><img src="../images/sub1/colorchip4.png" alt="colorchip4" /></li>
+        </ul>
+      </div>
+    </div>
+    <!--page3_wrap-->
+
+    <div id="page4">
+      <!--page4-->
+
+      <ul class="page4_down">
+        <li data-aos="fade-down" data-aos-duration="1000">
+          <img src="../images/sub1/what_to_do_1.png" alt="what to do1" />
+        </li>
+        <li>
+          <img src="../images/sub1/what_to_do_line.png" alt="what to do_line" />
+        </li>
+        <li data-aos="fade-down" data-aos-duration="1500">
+          <img src="../images/sub1/what_to_do_2.png" alt="what to do2" />
+        </li>
+        <li>
+          <img src="../images/sub1/what_to_do_line.png" alt="what to do_line" />
+        </li>
+        <li data-aos="fade-down" data-aos-duration="2000">
+          <img src="../images/sub1/what_to_do_3.png" alt="what to do3" />
+        </li>
+      </ul>
+    </div>
+    <!--page4-->
+
+    <div id="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <ul class="footer_left">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>｜</li>
+          <li>부산광역시 중구 중앙대로 26 다원중앙타워 10층</li>
+          <li>이메일 eichel2@naver.com / 전화번호 010-5822-9455</li>
+          <li>Copyright © 2021 Project ecogram. All rights Reserved.</li>
+        </ul>
+
+        <img
+          src="../images/main/logo_footer.png"
+          alt="푸터로고"
+          class="footerlogo"
+        />
+      </div>
+    </div>
+    <!--footer-->
+
+    <!--js-->
+    <script src="../js/sub4/jquery-3.4.1.min.js"></script>
+    <script src="../js/login.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

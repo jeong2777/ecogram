@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920" />
+    <link
+      href="../images/main/icon.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>환경소식</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/sub4/swiper.min.css" />
+    <link href="../css/sub4/swiper.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="../css/sub4/swiper_style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../css/sub4/sub4style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .modal2,
+      .modal3 {
+        width: 800px;
+        height: 525px;
+        position: absolute;
+        bottom: 0;
+        left: 22%;
+        background-color: #ffe9c1;
+        padding: 48px;
+        box-sizing: border-box;
+        text-align: center;
+        z-index: 1;
+      }
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        line-height: 1.7rem;
+        background-color: coral;
+        padding: 5px;
+      }
+      #earth-select,
+      #animal-select {
+        height: 25px;
+      }
+      #compare,
+      #now,
+      #animal1,
+      #animal2 {
+        width: 100%;
+        height: 164px;
+        border: 1px solid palevioletred;
+        margin-top: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        line-height: 2.5rem;
+        letter-spacing: -1.7px;
+      }
+
+      #animal2 {
+        padding: 0;
+        line-height: 1.7rem;
+        height: 193px;
+      }
+      #compare p:nth-child(1),
+      #now p:nth-child(1) {
+        font-size: 1.7rem;
+      }
+      #compare p:nth-child(2),
+      #now p:nth-child(2) {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <!--menu-->
+      <a href="../index.html" class="menu_left">
+        <img src="../images/main/menulogo.png" alt="menulogo" />
+      </a>
+
+      <ul class="menu_center">
+        <li>
+          <a href="sub1.html">에코그램</a>
+        </li>
+        <li>
+          <a href="sub2.html">실천하기</a>
+        </li>
+        <li>
+          <a href="sub3.html">함께하기</a>
+        </li>
+        <li class="onn">
+          <a href="sub4.html">환경소식</a>
+        </li>
+      </ul>
+
+      <ul class="menu_right">
+        <li id="login-click">Login</li>
+        <li>Join</li>
+        <span id="greeting" class="hidden"></span>
+
+        <form id="login-form" class="hidden">
+          <label>아이디</label>
+          <input type="text" placeholder="jeong" id="loginID" /><br />
+          <label>비밀번호</label>
+          <input type="password" placeholder="12345" id="loginPW" />
+          <button>로그인</button>
+        </form>
+      </ul>
+    </div>
+    <!--menu-->
+
+    <div id="page1">
+      <!--page1-->
+      <div class="page1_inner">
+        <h2>다양한 환경에 대한 정보를 알려드립니다</h2>
+        <h1>Environmental News</h1>
+        <img src="../images/sub4/bear.png" alt="bear" />
+      </div>
+    </div>
+    <!--page1-->
+
+    <div id="page2">
+      <!--page2-->
+      <h1>HELLO SPRING</h1>
+      <h2>코로나로 지친 마음속에도 봄이 찾아 올거에요</h2>
+
+      <div class="video">
+        <video autoplay muted loop>
+          <source src="../images/sub4/spring_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!--page2-->
+
+    <div id="page3">
+      <!--page3-->
+      <h1>ECO ISSUE</h1>
+      <h2>최신 환경 트렌드, 친환경적인 디자인, 이달의 환경 이슈</h2>
+    </div>
+    <!--page3-->
+    <div class="overflow">
+      <div class="gallery">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide margin">
+              <a href="#">
+                <h4>요즘 뜨고 있는 자연에너지</h4>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <h4>자연을 닮은 디자인</h4>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <h4>지속가능한 여행지</h4>
+              </a>
+            </div>
+          </div>
+
+          <div class="button">
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page4">
+      <!--page4-->
+      <h1>SMALL ECO</h1>
+      <h2>이 달의 주요 환경소식을 확인해보세요</h2>
+
+      <ul class="box">
+        <li class="box_li1">
+          <a href="#">
+            <h3>
+              국립공원별 봄꽃 <br />
+              관찰시기를 알아보세요<br />
+              <img
+                src="../images/sub4/arrow1.png"
+                alt="arrow1"
+                class="arrow1"
+              />
+            </h3>
+          </a>
+        </li>
+
+        <li class="box_li2">
+          <a href="#">
+            <h3>
+              소등행사 후 지구온도는<br />
+              어떻게 달라졌을까?<br />
+              <img
+                src="../images/sub4/arrow2.png"
+                alt="arrow2"
+                class="arrow2"
+              />
+            </h3>
+          </a>
+        </li>
+
+        <div class="modal2 hidden">
+          <p class="close">X</p>
+          <form id="earth-form">
+            <label for="earth-select">비교할 년도를 선택해주세요</label>
+            <select id="earth-select">
+              <option value="">--Please choose an option--</option>
+              <option value="2012">2012</option>
+              <option value="2014">2014</option>
+              <option value="2016">2016</option>
+              <option value="2018">2018</option>
+              <option value="2020">2020</option>
+            </select>
+          </form>
+
+          <div id="compare">
+            <p></p>
+            <p></p>
+          </div>
+
+          <div id="now">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+
+        <li class="box_li3">
+          <a href="#">
+            <h3>
+              경남 고성군 앞바다<br />
+              해양생물보호구역 지정<br />
+              <img
+                src="../images/sub4/arrow3.png"
+                alt="arrow3"
+                class="arrow3"
+              />
+            </h3>
+          </a>
+        </li>
+
+        <div class="modal3 hidden">
+          <p class="close">X</p>
+          <form id="aniaml-form">
+            <label for="aniaml-select"
+              >제주특별자치도_멸종위기야생동물현황</label
+            >
+            <select id="aniaml-select">
+              <option value="">--Please choose an option--</option>
+              <option value="0">포유류</option>
+              <option value="1">조류</option>
+              <option value="2">양서 파충류</option>
+              <option value="4">곤충류</option>
+              <option value="5">무척추동물</option>
+              <option value="8">고등균류</option>
+            </select>
+          </form>
+
+          <div id="animal1">
+            <h2></h2>
+          </div>
+
+          <div id="animal2">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!--page4-->
+
+    <div id="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <ul class="footer_left">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>｜</li>
+          <li>부산광역시 중구 중앙대로 26 다원중앙타워 10층</li>
+          <li>이메일 eichel2@naver.com / 전화번호 010-5822-9455</li>
+          <li>Copyright © 2021 Project ecogram. All rights Reserved.</li>
+        </ul>
+
+        <img
+          src="../images/main/logo_footer.png"
+          alt="푸터로고"
+          class="footerlogo"
+        />
+      </div>
+    </div>
+    <!--footer-->
+
+    <!--js-->
+    <script src="../js/sub4/swiper.min.js"></script>
+    <script src="../js/sub4/Swiper.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/sub4/earthAPI.js"></script>
+    <script src="../js/sub4/animalAPI.js"></script>
+  </body>
+</html>
