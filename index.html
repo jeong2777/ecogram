@@ -23,6 +23,11 @@
     <link href="css/main/style.css" rel="stylesheet" type="text/css" />
 
     <style>
+      body,
+      html {
+        margin: 0;
+        overflow: hidden;
+      }
       .modal {
         width: 310px;
         height: 400px;
@@ -138,6 +143,23 @@
           <button>로그인</button>
         </form>
       </ul>
+
+      <div class="m_nav">
+        <input type="checkbox" id="menuicon" />
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <a href="sub_html/sub1.html">에코그램</a>
+          <a href="sub_html/sub2.html">실천하기</a>
+          <a href="sub_html/sub3.html">함께하기</a>
+          <a href="sub_html/sub4.html">환경소식</a>
+          <a href="#">Login</a>
+          <a href="#">Join</a>
+        </div>
+      </div>
     </div>
     <!--menu-->
 
@@ -226,11 +248,11 @@
         <section class="page3 scroll-box">
           <!--page3-->
           <div class="page3_inner">
-            <h6>
+            <h6 class="page3-h6">
               필요한 것을 줄이면,<br />
               쓰레기양도 자연스레 감소합니다
             </h6>
-            <p>
+            <p class="page3-p">
               By reducing your needs,<br />
               you will automatically see a huge drop<br />
               in the amount of trash you are creating
@@ -339,6 +361,6 @@
     <script src="js/onepagescroll.js" type="text/javascript"></script>
     <script src="js/idea.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
-    <script src="js/animation" type="text/javascript"></script>
+    <script src="js/remove-animation.js" type="text/javascript"></script>
   </body>
 </html>
