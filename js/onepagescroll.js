@@ -11,10 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //페이지 번호가 마지막이면 작동을 멈춥니다.
       if (page == item.length - 1) return;
       page++;
-      item[page].setAttribute(
-        "style",
-        "position:absolute; top:" + 0 + "%; left:" + 0 + "px;"
-      );
+      item[page].setAttribute("style", "position:absolute; top: 0%; left:0px;");
     };
 
     const caseDown = () => {

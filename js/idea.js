@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const ideaBtn = document.querySelector("#idea");
-  const page2 = document.querySelector(".page2_left");
+  const page2 = document.querySelector(".page2");
+  const ideaBtn = page2.querySelector("#idea-button");
+  const page2Idea = page2.querySelector(".idea");
+  const page2X = page2Idea.querySelector("p");
 
-  ideaBtn.addEventListener("click", () => {
-    const div = document.createElement("div");
-    const h2 = document.createElement("h2");
-    const close = document.createElement("span");
-    page2.appendChild(div);
-    div.classList.add("modal");
-    div.appendChild(h2);
-    close.innerText = "닫기";
-    div.appendChild(close);
-    h2.innerText = "쓰레기를 버리는 좋은 방법, 나만의 노하우를 공유해주세요!";
+  const HIDDEN_CLASSNAME = "hidden";
+
+  const page2IdeaHidden = () => {
+    page2Idea.classList.toggle(HIDDEN_CLASSNAME);
+  };
+
+  ideaBtn.addEventListener("click", page2IdeaHidden);
+  page2X.addEventListener("click", page2IdeaHidden);
+
+  document.addEventListener("wheel", (event) => {
+    if (event.deltaY < 0 || event.deltaY > 0) {
+      page2Idea.classList.add(HIDDEN_CLASSNAME);
+    }
   });
 });
