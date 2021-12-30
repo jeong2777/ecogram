@@ -21,12 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
       item[page + 1].setAttribute("style", "position:none;");
     };
 
-    const [up, down] = [38, 40];
     body.addEventListener("keyup", (event) => {
       //keycode를 이용하여 방향키를 찾아냅니다.
-      if (event.keyCode == down) {
+      if (event.key == "ArrowDown") {
         caseUp();
-      } else if (event.keyCode == up) {
+      } else if (event.key == "ArrowUp") {
         caseDown();
       }
     });
