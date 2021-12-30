@@ -13,8 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   ideaBtn.addEventListener("click", page2IdeaHidden);
   page2X.addEventListener("click", page2IdeaHidden);
 
-  document.addEventListener("wheel", (event) => {
+  const body = document.body;
+
+  body.addEventListener("wheel", (event) => {
     if (event.deltaY < 0 || event.deltaY > 0) {
+      page2Idea.classList.add(HIDDEN_CLASSNAME);
+    }
+  });
+  body.addEventListener("keyup", (event) => {
+    if (event.key == "ArrowDown" || event.key == "ArrowUp") {
       page2Idea.classList.add(HIDDEN_CLASSNAME);
     }
   });
