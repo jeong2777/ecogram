@@ -1,125 +1,12 @@
-@font-face {
-  font-family: "BBTreeGB";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+/*page1*/
+#page1 {
+  background: linear-gradient(to right, #eeb679, #e8e586);
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-body {
-  font-family: "Nanum Gothic", sans-serif;
-  line-height: 25px;
-  font-size: 16px;
-  position: relative;
-  text-align: left;
-  color: #35332d;
-}
-
-h1 {
-  font-family: "BBTreeGB";
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 700;
-  letter-spacing: -2px;
-}
-h2 {
-  font-size: 28px;
-  line-height: 30px;
-  font-weight: 500;
-}
-
-/*menu*/
-.menu {
-  position: fixed;
-  text-align: center;
-  height: 62px;
-  z-index: 2;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.menu_left {
-  float: left;
-  display: block;
-  margin: 3px 0 0 3%;
-}
-.menu_center {
-  width: 40%;
-  margin: auto;
-}
-.menu_center li {
-  float: left;
-  width: 25%;
-  margin: 17px 0 0 0;
-}
-.menu_center li a {
-  font-weight: 700;
-  font-size: 19px;
-  display: block;
-  transition: all 0.4s;
-  color: #000;
-}
-.menu_center .onn a {
-  color: orange;
-}
-.menu_right {
-  float: right;
-  margin: 18px 3% 0 0;
-  font-weight: 200;
-}
-.menu_right li {
-  float: left;
-  margin: 0 0 0 20px;
-}
-.menu img {
-  width: 100%;
-}
-
-/*page*/
-#page {
-  height: 693px;
-  width: 100%;
-  margin: auto;
-  box-sizing: border-box;
-  background: url(../../images/sub2/page_bg.jpg) no-repeat center top;
-  background-size: cover;
-  max-width: 1920px;
-  overflow: hidden;
-}
-.page_inner {
-  width: 90%;
-  padding-left: 5%;
-  position: relative;
-}
-#page h2 {
-  padding-top: 410px;
-  color: #fff;
-  letter-spacing: -1px;
-}
-#page h1 {
-  font-size: 80px;
-  line-height: 110px;
+#page1 h1 {
   color: #d3690e;
-  letter-spacing: -3px;
 }
-#page img {
-  display: block;
-  position: absolute;
-  bottom: -140px;
-  right: -170px;
+#page1 h2 {
+  color: #6c5404;
 }
 @keyframes transform {
   0% {
@@ -131,225 +18,40 @@ h2 {
     transform: translateX(0);
   }
 }
-#page img {
-  animation: transform 1s 0s forwards;
+#page1 img {
+  display: block;
+  position: absolute;
+  bottom: -140px;
+  right: -170px;
+  animation: transform 1s 0.5s forwards;
   opacity: 0;
 }
 
-/*page1*/
-#page1 {
-  height: 2250px;
-  width: 100%;
-  padding-top: 80px;
-}
-.page1_inner {
-  width: 1320px;
-  height: 1656px;
+/*pinterlest*/
+#pinterlest {
+  width: 1080px;
   margin: auto;
+  padding-top: 160px;
 }
-.page1_inner .infographic {
-  display: block;
-  width: 100%;
-}
-.page1_mid {
-  height: 430px;
-  width: 100%;
-  background: #e3e8c1;
-  margin: 135px 0;
-}
-.page1_mid h1 {
-  color: green;
-  line-height: 90px;
-  padding: 120px 71px 0 0;
-  font-weight: 400;
-  letter-spacing: -5px;
-}
-.page1_mid h5 {
-  font-weight: 400;
-  padding: 13px 0;
-  font-size: 14px;
-}
-.page1_mid_inner {
-  width: 1110px;
-  margin: auto;
-}
-.page1_mid_inner h1,
-.page1_mid_inner div {
-  float: left;
-}
-.maeil1,
-.maeil2,
-.maeil3 {
-  background: #fff;
-  padding: 35px 20px;
-  box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);
-  border-radius: 8px;
+#pinterlest h1 {
+  line-height: 75px;
   text-align: center;
-  margin: 50px 25px 0 0;
-  box-sizing: border-box;
-  width: 235px;
-  height: 330px;
+  padding-bottom: 70px;
 }
-.maeil1,
-.maeil3 {
-  transform: rotate(1deg);
+.out-box {
+  width: 1080px;
+  margin-bottom: 160px;
+  position: relative;
 }
-.maeil2 {
-  transform: rotate(3deg);
+.item {
+  width: 20%;
+  max-width: 200px;
+  position: absolute;
 }
-.page1_mid_inner div a {
-  border-radius: 30px;
-  background: #ffd588;
-  display: block;
-  padding: 3px 5px;
-  color: #fff;
-}
-.page1_mid_inner div a:hover {
-  background: orange;
-}
-
-/*page2*/
-#page2 {
-  width: 1150px;
-  height: 1080px;
-  margin: 135px auto;
-  padding-top: 100px;
-}
-.page2_search {
-  margin: auto;
-  height: 25px;
-  padding-bottom: 45px;
-  border-bottom: 2px solid #000;
-}
-.page2_search li {
-  float: left;
-  margin-left: 2px;
-}
-.page2_search li:first-child {
-  margin: 0;
-}
-.page2_search li:nth-child(2) {
-  margin-left: 372px;
-}
-#search:focus,
-#submit:focus,
-#reset:focus {
-  outline: none;
-}
-#search {
-  width: 370px;
-}
-#type {
-  width: 100px;
-}
-#reset,
-#submit {
-  padding: 0 20px;
-}
-#type,
-#submit,
-#reset,
-#search {
-  height: 25px;
-}
-.page2_letter {
-  margin-top: 40px;
-  height: 844px;
-}
-.page2_letter ul {
-  float: left;
-  margin-bottom: 50px;
-}
-.page2_letter ul:nth-child(2),
-.page2_letter ul:nth-child(5) {
-  margin: 0 56px 50px 56px;
-}
-.page2_letter_img {
-  width: 346px;
-  height: 286px;
-  overflow: hidden;
-}
-.page2_letter_img img {
-  transition: all 0.4s;
-}
-.page2_letter_img img:hover {
-  transform: scale(1.06, 1.06);
-}
-.page2_letter ul li:first-child {
-  color: #ccc;
-}
-.number {
-  margin: 25px auto;
-  text-align: center;
-  width: 89px;
-}
-.number li {
-  float: left;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #ccc;
-}
-.now {
-  background: #ccc;
-}
-.now a {
-  color: #fff;
-}
-.number li:nth-child(2) {
-  margin: 0 4px;
-}
-.page2_letter_li2 a {
-  font-size: 19px;
-  font-weight: 500;
-}
-.page2_letter_li2 a:hover {
-  background: #727272;
-  color: #fff;
-}
-.page2_letter_li4 a:hover {
-  color: orange;
-}
-.page2_letter_li2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.page2_letter_date {
-  font-size: 14px;
-}
-
-/*footer*/
-#footer {
+.item img {
+  border-radius: 15px;
   width: 100%;
-  height: 110px;
-  background: #67625e;
 }
-.footer_inner {
-  width: 1320px;
-  margin: auto;
-  color: rgba(255, 255, 255, 0.5);
-}
-.footerlogo {
-  float: right;
-  opacity: 0.5;
-  margin-top: 1%;
-}
-.footer_left {
-  float: left;
-  display: block;
-  margin-top: 1.4%;
-}
-.footer_left li {
-  opacity: 0.5;
-  float: left;
-}
-.footer_left li a:hover {
-  color: #fff;
-}
-.footer_left li a {
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 25px;
-}
-.footer_left li:nth-child(4),
-.footer_left li:nth-child(5) {
-  clear: both;
+.item p {
+  font-weight: 700;
 }

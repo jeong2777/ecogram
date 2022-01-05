@@ -1,157 +1,16 @@
-@font-face {
-  font-family: "BBTreeGB";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
 body {
-  font-family: "Nanum Gothic", sans-serif;
-  line-height: 25px;
-  font-size: 16px;
-  position: relative;
-  text-align: left;
   height: 3150px;
-  color: #35332d;
-}
-
-h1 {
-  font-family: "BBTreeGB";
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 700;
-  letter-spacing: -2px;
-}
-h2 {
-  font-size: 28px;
-  line-height: 30px;
-  font-weight: 500;
-}
-
-/*menu*/
-.menu {
-  position: fixed;
-  text-align: center;
-  height: 62px;
-  z-index: 2;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.menu_left {
-  float: left;
-  display: block;
-  margin: 3px 0 0 3%;
-}
-.menu_center {
-  width: 40%;
-  margin: auto;
-}
-.menu_center li {
-  float: left;
-  width: 25%;
-  margin: 17px 0 0 0;
-}
-.menu_center li a {
-  font-weight: 700;
-  font-size: 19px;
-  display: block;
-  transition: all 0.4s;
-  color: #000;
-}
-.menu_right {
-  float: right;
-  margin: 18px 3% 0 0;
-  font-weight: 200;
-}
-.menu_right li {
-  float: left;
-  margin: 0 0 0 20px;
-}
-.menu img {
-  width: 100%;
-}
-.hidden {
-  display: none;
-}
-.menu_center .on {
-  color: orange;
-}
-/*login*/
-#login-form {
-  width: 190px;
-  height: 120px;
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  padding: 15px;
-}
-#login-form input {
-  width: 80px;
-  float: right;
-}
-#login-form button {
-  margin-top: 10px;
-  width: 140px;
-  height: 23px;
-  background-color: orange;
 }
 
 /*page1*/
 #page1 {
-  height: 22%;
-  width: 100%;
-  margin: auto;
-  box-sizing: border-box;
-  background: url(../../images/sub4/Untitled-1.jpg) no-repeat center top;
-  background-size: cover;
-  overflow: hidden;
-}
-.page1_inner {
-  width: 90%;
-  padding-left: 5%;
-  position: relative;
-}
-#page1 h2 {
-  padding-top: 410px;
-  color: #ba9d3e;
-  letter-spacing: -1px;
+  background: linear-gradient(to right, #bce6b4, #99abdf);
 }
 #page1 h1 {
-  font-size: 80px;
-  line-height: 110px;
   color: #413718;
-  letter-spacing: -3px;
 }
-#page1 img {
-  display: block;
-  position: absolute;
-  bottom: -138px;
-  right: -8%;
-}
-#page1 img {
-  display: block;
-  position: absolute;
-  bottom: -140px;
-  right: -200px;
+#page1 h2 {
+  color: #ba9d3e;
 }
 @keyframes transform {
   0% {
@@ -164,7 +23,11 @@ h2 {
   }
 }
 #page1 img {
-  animation: transform 1s 0s forwards;
+  display: block;
+  position: absolute;
+  bottom: -140px;
+  right: -200px;
+  animation: transform 1s 0.5s forwards;
   opacity: 0;
 }
 
@@ -199,7 +62,6 @@ h2 {
   width: 1160px;
   margin: auto;
   height: 505px;
-  box-sizing: border-box;
   position: relative;
 }
 .swiper-slide h4 {
@@ -231,7 +93,6 @@ h2 {
   position: absolute;
   bottom: 25px;
   left: 0;
-  color: orange;
 }
 .swiper-container {
   width: 150%;
@@ -291,10 +152,9 @@ h2 {
 /*page4*/
 #page4 {
   width: 1160px;
-  height: 965px;
+  height: 671px;
   margin: auto;
   padding: 135px 0 160px 0;
-  box-sizing: border-box;
 }
 #page4 h2 {
   padding: 20px 0 70px;
@@ -365,14 +225,13 @@ h2 {
 .modal2,
 .modal3 {
   width: 800px;
-  height: 525px;
   position: absolute;
   bottom: 0;
   left: 22%;
   background-color: #fff;
   padding: 48px;
-  box-sizing: border-box;
   text-align: center;
+  box-sizing: border-box;
   z-index: 1;
   border-radius: 30px;
   box-shadow: 0px 7px 12px 2px #33333369;
@@ -393,13 +252,11 @@ h2 {
 #now,
 #animal1,
 #animal2 {
-  width: 100%;
-  height: 164px;
+  height: 80px;
   border: 1px solid orange;
   background: #ffa50021;
   margin-top: 20px;
   padding: 40px;
-  box-sizing: border-box;
   line-height: 2.5rem;
   letter-spacing: -1.7px;
 }
@@ -415,41 +272,4 @@ h2 {
 #compare p:nth-child(2),
 #now p:nth-child(2) {
   font-size: 2rem;
-}
-
-/*footer*/
-#footer {
-  width: 100%;
-  height: 110px;
-  background: #67625e;
-}
-.footer_inner {
-  width: 1320px;
-  margin: auto;
-  color: rgba(255, 255, 255, 0.5);
-}
-.footerlogo {
-  float: right;
-  opacity: 0.5;
-  margin-top: 1%;
-}
-.footer_left {
-  float: left;
-  display: block;
-  margin-top: 1.4%;
-}
-.footer_left li {
-  opacity: 0.5;
-  float: left;
-}
-.footer_left li a:hover {
-  color: #fff;
-}
-.footer_left li a {
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 25px;
-}
-.footer_left li:nth-child(4),
-.footer_left li:nth-child(5) {
-  clear: both;
 }

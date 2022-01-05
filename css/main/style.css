@@ -24,7 +24,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #35332d;
 }
 body {
   font-family: "Nanum Gothic", sans-serif;
@@ -32,28 +32,31 @@ body {
   font-size: 16px;
   position: relative;
   text-align: left;
-  -webkit-font-smoothing: antialiased;
   color: #35332d;
+}
+body,
+html {
+  margin: 0;
+  overflow: hidden;
 }
 h1 {
   font-family: "BBTreeGB";
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 700;
-  letter-spacing: -2px;
+  font-size: 2.69rem;
+  line-height: 3.35rem;
+  letter-spacing: -0.12rem;
+  font-weight: 400;
 }
 h2 {
   font-size: 28px;
   line-height: 30px;
   font-weight: 500;
 }
-
 .wrapper {
   height: 100% !important;
-  height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
+
 /*원페이지스크롤*/
 html {
   overflow: hidden;
@@ -70,18 +73,16 @@ body {
   height: 100vh;
   background-color: #fff;
 }
-
 #scroll-wrap {
   position: relative;
 }
 
 /*menu*/
 .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
   text-align: center;
   height: 62px;
+  z-index: 2;
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -98,23 +99,25 @@ body {
 .menu_left {
   float: left;
   display: block;
+  margin: 3px 0 0 3%;
 }
 .menu_center {
-  width: 39.52%;
+  width: 40%;
   margin: auto;
-  margin-left: 29.67%;
 }
 .menu_center li {
   float: left;
   width: 25%;
-  margin: 17px 0 0 0;
+  margin: 17px 0 0 -6px;
 }
 .menu_center li a {
   font-weight: 700;
   font-size: 19px;
   display: block;
-  transition: all 0.4s;
   color: #000;
+}
+.menu_center .on {
+  color: orange;
 }
 .menu_right {
   float: right;
@@ -123,10 +126,36 @@ body {
 }
 .menu_right li {
   float: left;
-  margin: 0 0 0 20px;
+  margin-left: 20px;
 }
 .menu img {
   width: 100%;
+}
+
+/*login*/
+#login-form {
+  width: 190px;
+  height: 120px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 15px;
+}
+#login-form input {
+  width: 80px;
+  float: right;
+}
+#login-form button {
+  margin-top: 10px;
+  width: 140px;
+  height: 23px;
+  background-color: orange;
+}
+.hidden {
+  display: none;
 }
 
 /*page1*/
@@ -168,12 +197,7 @@ body {
   height: 55%;
 }
 .page1_box_letter h1 {
-  font-size: 269%;
-  line-height: 125%;
   padding: 1% 6% 2% 6%;
-  font-weight: 400;
-  letter-spacing: -2px;
-  font-family: "BBTreeGB";
 }
 #input_wrap {
   position: relative;
@@ -189,7 +213,6 @@ body {
   box-shadow: 0 0 5px rgb(0 0 0 / 30%);
   padding: 0 6%;
 }
-
 #search:focus {
   outline: none;
 }
@@ -272,18 +295,14 @@ body {
   animation: animation 1s 5s forwards;
   opacity: 0;
 }
-.page2_left_inner a,
-.page2_left_inner h6 {
+.page2_left_inner a {
   display: inline-block;
   padding: 8px 40px;
   border: 1px solid orange;
   transition: all 0.1s;
   margin: 45px 10px 0 0;
-  font-size: 16px;
-  font-weight: 100;
 }
-.page2_left_inner a:hover,
-.page2_left_inner h6:hover {
+.page2_left_inner a:hover {
   background: orange;
   color: #fff;
 }
@@ -291,6 +310,48 @@ body {
   float: right;
   width: 50%;
   height: 100%;
+}
+.idea {
+  width: 326px;
+  height: 404px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 30px;
+  padding: 50px 30px;
+  box-shadow: 0px 7px 12px 2px #33333369;
+}
+.gform p {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  font-size: 2rem;
+  line-height: 1.7rem;
+  padding: 9px 9px;
+}
+.gform button {
+  padding: 2px 25px;
+  background: none;
+  border: 1px solid orange;
+  margin-left: 31%;
+}
+.gform button:hover {
+  background-color: orange;
+}
+.idea textarea {
+  width: 100%;
+  resize: none;
+}
+.pure-group {
+  margin: 8px 0;
+  border: 1px solid orange;
+  background: #ffa50021;
+}
+.thankyou_message h2 {
+  line-height: 2.5rem;
+  letter-spacing: -0.5px;
 }
 
 /*page3*/
@@ -312,8 +373,8 @@ body {
   transform: translate(-50%, -50%);
 }
 .page3_inner h6 {
-  font-size: 405%;
-  line-height: 150%;
+  font-size: 4.05rem;
+  line-height: 6.1rem;
   letter-spacing: -7px;
   color: #133150;
   font-weight: 500;
@@ -741,7 +802,6 @@ body {
     position: absolute;
   }
   .page2_right {
-    float: none;
     width: 100%;
   }
   .page2_left_inner {
@@ -758,8 +818,14 @@ body {
     font-size: 43px;
   }
   .page2_left_inner a {
-    margin: 30px 0px 0 0;
+    margin-top: 30px;
     border: 3px solid orange;
+  }
+  #idea-button {
+    margin-top: 15px;
+  }
+  .idea {
+    z-index: 5;
   }
   .page4_inner .div2 {
     margin: 0;
@@ -769,8 +835,8 @@ body {
     height: 50%;
   }
   .page3_inner h6 {
-    font-size: 260%;
-    line-height: 135%;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
   }
   .page3_inner p {
     font-size: 122%;
