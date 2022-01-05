@@ -21,27 +21,6 @@
 
     <!--css-->
     <link href="css/main/style.css" rel="stylesheet" type="text/css" />
-
-    <style>
-      body,
-      html {
-        margin: 0;
-        overflow: hidden;
-      }
-      .modal {
-        width: 310px;
-        height: 400px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        border: 1px solid #333;
-      }
-      .hidden {
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <!-- 상단 고정메뉴 -->
@@ -138,6 +117,13 @@
 
         <section class="page2 scroll-box">
           <!--page2-->
+          
+          <div class="page2_right">
+            <video autoplay muted loop>
+              <source src="images/main/video_trash.mp4" type="video/mp4" />
+            </video>
+          </div>
+
           <div class="page2_left">
             <div class="page2_left_inner">
               <h1>지구친화적 다이어트</h1>
@@ -161,15 +147,46 @@
               </p>
 
               <a href="sub_html/sub2.html">실천하기</a>
-              <h6 id="idea">아이디어 공유하기</h6>
+              <a id="idea-button">아이디어 공유하기</a>
             </div>
           </div>
 
-          <div class="page2_right">
-            <video autoplay muted loop>
-              <source src="images/main/video_trash.mp4" type="video/mp4" />
-            </video>
-          </div>
+
+          <div class="idea hidden"><!--idea-->
+            <form
+              class="gform"
+              method="POST"
+              data-email="example@email.net"
+              action="https://script.google.com/macros/s/AKfycbxruyusJhtSYvjsZYkayjdfWwwLcgM6Bc8FwsNhBA/exec"
+            >
+            <p>X</p>
+
+            <div class="thankyou_message hidden">
+              <h2>감사합니다! <br>
+                <br>
+                작성해주신 아이디어가 성공적으로 전달되었습니다.👏👏</h2>
+             </div>
+
+            <div class="form-elements">
+              <fieldset class="pure-group">
+                <label for="name">이름: </label>
+                <input id="name" name="name" required placeholder="이름을 입력해주세요" />
+              </fieldset>
+        
+              <fieldset class="pure-group">
+                <label for="message">내용: </label><br>
+                <textarea id="message" name="message" rows="10" required
+                placeholder="당신의 아이디어를 보내주세요!"></textarea>
+              </fieldset>
+        
+              <fieldset class="pure-group">
+                <label for="email">이메일:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="your.name@email.com"/>
+              </fieldset>
+              <button>보내기</button>
+            </form>
+          </div><!--idea-->
         </section>
         <!--page2-->
 
@@ -290,5 +307,6 @@
     <script src="js/idea.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
     <script src="js/remove-animation.js" type="text/javascript"></script>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 </html>
