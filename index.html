@@ -31,24 +31,16 @@
       /></a>
 
       <ul class="menu_center">
-        <li><a href="sub_html/sub1.html">에코그램</a></li>
-        <li><a href="sub_html/sub2.html">실천하기</a></li>
-        <li><a href="sub_html/sub3.html">함께하기</a></li>
-        <li><a href="sub_html/sub4.html">환경소식</a></li>
+        <li><a href="sub1.html">에코그램</a></li>
+        <li><a href="sub2.html">실천하기</a></li>
+        <li><a href="sub3.html">함께하기</a></li>
+        <li><a href="sub4.html">환경소식</a></li>
       </ul>
 
       <ul class="menu_right">
-        <li id="login-click">Login</li>
-        <li>Join</li>
-        <span id="greeting" class="hidden"></span>
-
-        <form id="login-form" class="hidden">
-          <label>아이디</label>
-          <input type="text" placeholder="jeong" id="loginID" /><br />
-          <label>비밀번호</label>
-          <input type="password" placeholder="12345" id="loginPW" />
-          <button>로그인</button>
-        </form>
+        <!-- 네이버 로그인 버튼 노출 영역 -->
+      <div id="naver_id_login"></div>
+        <!-- 네이버 로그인 버튼 노출 영역 -->
       </ul>
 
       <div class="m_nav">
@@ -59,12 +51,11 @@
           <span></span>
         </label>
         <div class="sidebar">
-          <a href="sub_html/sub1.html">에코그램</a>
-          <a href="sub_html/sub2.html">실천하기</a>
-          <a href="sub_html/sub3.html">함께하기</a>
-          <a href="sub_html/sub4.html">환경소식</a>
+          <a href="sub1.html">에코그램</a>
+          <a href="sub2.html">실천하기</a>
+          <a href="sub3.html">함께하기</a>
+          <a href="sub4.html">환경소식</a>
           <a href="#">Login</a>
-          <a href="#">Join</a>
         </div>
       </div>
     </div>
@@ -146,7 +137,7 @@
                 매립해 자원을 순환시키자.
               </p>
 
-              <a href="sub_html/sub2.html">실천하기</a>
+              <a href="sub2.html">실천하기</a>
               <a id="idea-button">아이디어 공유하기</a>
             </div>
           </div>
@@ -289,10 +280,10 @@
               </div>
             </div>
 
-            <div id="footer">
+            <footer>
               <!--footer-->
               <p>Copyright © 2021 Project ecogram. All rights Reserved.</p>
-            </div>
+            </footer>
             <!--footer-->
           </div>
         </section>
@@ -303,10 +294,15 @@
     <!--wrapper-->
 
     <!--js-->
-    <script src="js/onepagescroll.js" type="text/javascript"></script>
-    <script src="js/idea.js" type="text/javascript"></script>
-    <script src="js/login.js" type="text/javascript"></script>
-    <script src="js/remove-animation.js" type="text/javascript"></script>
+    <script src="js/index/onepagescroll.js" type="text/javascript"></script>
+    <script src="js/index/idea.js" type="text/javascript"></script>
+    <script src="js/common/login.js" type="text/javascript"></script>
+    <script src="js/index/remove-animation.js" type="text/javascript"></script>
+    <!--idea 메일전송-->
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <!--네이버 아이디 로그인-->
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/common/naverID-login.js" type="text/javascript"></script>
   </body>
 </html>
